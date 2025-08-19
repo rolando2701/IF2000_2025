@@ -7,7 +7,7 @@ package if2000_introduccionprogra;
 
 import java.util.Scanner;
 import logic.Ejercicios;
-
+import domain.Person;
 /**
  *
  * @author rolan
@@ -51,7 +51,12 @@ public class IF2000_IntroduccionProgra {
 //        System.out.println("Ingrese un num");
 //        //System.out.println("Es capicua? "+e.capicua(sc.nextInt()));
 //        e.sumNum(sc.nextInt());
-        
+     
+       Person p = new Person("Yudhansen", "Paniagua"
+               , "3-0808-5656", "12123434", 20);
+       
+        System.out.println(p.toString());
+
     }
     
 }
