@@ -5,6 +5,9 @@
  */
 package if2000_introduccionprogra;
 
+import java.util.Scanner;
+import logic.Ejercicios;
+
 /**
  *
  * @author rolan
@@ -43,9 +46,11 @@ public class IF2000_IntroduccionProgra {
         boolean 
         
         */
-        
-        
-        
+//        Scanner sc = new Scanner(System.in);
+//        Ejercicios e = new Ejercicios();
+//        System.out.println("Ingrese un num");
+//        //System.out.println("Es capicua? "+e.capicua(sc.nextInt()));
+//        e.sumNum(sc.nextInt());
         
     }
     
