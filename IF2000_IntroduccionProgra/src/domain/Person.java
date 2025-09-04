@@ -57,14 +57,15 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person\n" 
+        return "---------------------"
+                +"\nPerson:" 
                 + "\nname=" + getName()
                 + "\n, lastName=" + getLastName()
                 + "\n, id=" + getId()
                 + "\n, phone=" + getPhone()
                 + "\n, age=" + getAge();
     }
-    
-    
+      
     
 }
+

@@ -6,8 +6,9 @@
 package if2000_introduccionprogra;
 
 import java.util.Scanner;
-import logic.Ejercicios;
+import logic.*;
 import domain.Person;
+import domain.SavingAccount;
 /**
  *
  * @author rolan
@@ -19,6 +20,27 @@ public class IF2000_IntroduccionProgra {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Person client1 = 
+        new Person("Edgardo", "Corrales", "1-2323-4545", "45456789", 18);
+        
+        SavingAccount account1 = 
+        new SavingAccount("2025-09-04", 12, 5, "1000567801", 25000, client1);
+        
+        //Simulation of deposit of 3000colones in the account
+        account1.deposit(3000);
+        
+        
+        
+        System.out.println(account1.toString());
+        
+        System.out.println("\n\n\n--------------------------------------------");
+        System.out.println("Withdraw of money");
+        System.out.println("--------------------------------------------\n\n");
+        
+        account1.withdraw(16000);
+        
+        System.out.println(account1.toString());
         
         //Data types
         //Python:
@@ -52,11 +74,18 @@ public class IF2000_IntroduccionProgra {
 //        //System.out.println("Es capicua? "+e.capicua(sc.nextInt()));
 //        e.sumNum(sc.nextInt());
      
-       Person p = new Person("Yudhansen", "Paniagua"
-               , "3-0808-5656", "12123434", 20);
+       //Person p = new Person("Yudhansen", "Paniagua"
+       //        , "3-0808-5656", "12123434", 20);
        
-        System.out.println(p.toString());
+       // System.out.println(p.toString());
 
+      /* 
+       Ejercicios_Semana2_PracticaEnClase ej;
+       ej = new Ejercicios_Semana2_PracticaEnClase();
+       //    ej.quiz2_B_piramide(5);
+       LaboratorioX lab = new LaboratorioX();
+       lab.ejercicioX_cuadrado(3);
+        */
     }
     
 }
